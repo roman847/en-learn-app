@@ -3,7 +3,7 @@ import pageReducer from 'features/app/appSlice';
 
 export const store = configureStore({
   reducer: {
-    page: pageReducer,
+    app: pageReducer,
   },
 });
 

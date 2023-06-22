@@ -101,3 +101,30 @@ export const Mulish36 = {
   lineHeight: `${pxToRem(50)}`,
   letterSpacing: '0.07em',
 };
+
+export enum BrowserStorageItem {
+  userToken = 'userToken',
+  userId = 'userId',
+  userName = 'userName',
+}
+
+export enum ServerErrorMessage {
+  userNotFound = "Couldn't find a(an) user with",
+  forbidden = 'Forbidden',
+  empty = 'is not allowed to be empty',
+  invalidEmail = '"email" must be a valid email',
+  incorrectPasswordLength = '"password" length must be at least 8 characters long',
+  userExists = 'user with this e-mail exists',
+}
+
+export enum UserErrorMessage {
+  userNotFound = 'Пользователя с таким email не существует!',
+  forbidden = 'Неверный пароль!',
+  emptyName = 'Введите имя пользователя!',
+  emptyEmail = 'Введите email!',
+  emptyPassword = 'Введите пароль!',
+  invalidEmail = 'Введите корректный почтовый адрес!',
+  incorrectPasswordLength = 'Длина пароля должна быть не менее 8 символов!',
+  unexpectedError = 'Произошла непредвиденная ошибка',
+  userExists = 'Пользователь с таким email уже существует!',
+}

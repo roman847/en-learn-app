@@ -1,16 +1,17 @@
 import React, { FC } from 'react';
 import {
-  ContainerImage,
-  MainImage,
   Container,
   ContainerText,
   TitleSpan,
   Text,
   ContainerButton,
+  ContainerImage,
 } from 'components/MainContent/style';
+import pxToRem from 'core/functions/pxToRem';
 import { Color } from 'core/variables/constants';
 import { Title } from 'globalStyle';
 import CustomButton from 'components/CustomButton/CustomButton';
+import MainImage from 'components/MainImage/MainImage';
 
 const MainContent: FC = () => {
   return (
@@ -26,11 +27,12 @@ const MainContent: FC = () => {
           увлекательно. Для детей и взрослых.
         </Text>
         <ContainerButton>
-          <CustomButton />
+          <CustomButton text="Начать обучение" />
         </ContainerButton>
       </ContainerText>
       <ContainerImage>
-        <MainImage src="/png/mainImage.png"></MainImage>
+        {' '}
+        <MainImage width={pxToRem(430)} height={pxToRem(582)} src="/png/mainImage.png" />
       </ContainerImage>
     </Container>
   );

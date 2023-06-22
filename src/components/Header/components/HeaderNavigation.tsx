@@ -13,7 +13,7 @@ import {
 } from 'components/Header/components/style';
 
 const HeaderNavigation = React.memo(() => {
-  const { page } = useAppSelector((state) => state.page);
+  const { page } = useAppSelector((state) => state.app);
   const dispatch = useAppDispatch();
 
   const onclickHandler = (item: IItemsListItem) => {

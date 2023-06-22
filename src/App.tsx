@@ -11,6 +11,8 @@ import Audiocall from 'pages/Audiocall/Audiocall';
 import Sprint from 'pages/Sprint/Sprint';
 import Games from 'pages/Games/Games';
 import Statistic from 'pages/Statistic/Statistic';
+import Authorization from 'pages/Authorization/Authorization';
+import Registration from 'pages/Registration/Registration';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +23,8 @@ const router = createBrowserRouter(
       <Route path="/statistic" element={<Statistic />}></Route>
       <Route path="/games/sprint" element={<Sprint />}></Route>
       <Route path="/games/audiocall" element={<Audiocall />}></Route>
+      <Route path="/authorization" element={<Authorization />}></Route>
+      <Route path="/registration" element={<Registration />}></Route>
     </>
   )
 );

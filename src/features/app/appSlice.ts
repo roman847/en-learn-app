@@ -1,7 +1,19 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
+import { getUserName, getToken, getUserId } from 'services/index';
 
-const initialState = {
+interface IUser {
+  userId: string | undefined;
+  userName: string | undefined;
+  userToken: string | undefined;
+}
+interface IInitialState {
+  page: string;
+  user: IUser;
+}
+
+const initialState: IInitialState = {
   page: 'Главная',
+  user: { userId: getUserId(), userName: getUserName(), userToken: getToken() },
 };
 
 const appSlice = createSlice({

@@ -39,28 +39,6 @@ export const ContainerText = styled.div`
   }
 `;
 
-export const ContainerImage = styled.div`
-  position: relative;
-  width: ${pxToRem(430)};
-  height: ${pxToRem(582)};
-  border-radius: ${pxToRem(232)};
-  border: ${pxToRem(2)} solid;
-  border-color: ${Color.primary};
-
-  @media screen and (max-width: 1050px) {
-    order: -1;
-  }
-`;
-
-export const MainImage = styled.img`
-  position: absolute;
-  bottom: ${pxToRem(15)};
-  left: ${pxToRem(40)};
-  width: ${pxToRem(430)};
-  height: ${pxToRem(582)};
-  border-radius: ${pxToRem(232)};
-`;
-
 export const TitleSpan = styled.span`
   ${Montserrat52};
   color: ${Color.secondary};
@@ -94,5 +72,11 @@ export const ContainerButton = styled.div`
   }
   @media screen and (max-width: 580px) {
     margin-top: ${pxToRem(25)};
+  }
+`;
+
+export const ContainerImage = styled.div`
+  @media screen and (max-width: 1050px) {
+    order: -1;
   }
 `;
